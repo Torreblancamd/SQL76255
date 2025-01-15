@@ -1,0 +1,71 @@
+﻿Trabajo Práctico Nro. 1 
+Lista de Conceptos Tratados: Entidad; Atributo; Relación; Cardinalidad; Tipos de Entidades y de Relaciones. 
+1. Crear el diagrama Entidad / Relación y transformarlo a tablas del modelo Relacional.   
+a) Cardinalidad 1 : 1 
+b) Cardinalidad 1 : N 
+c) Cardinalidad N: N 
+2. Crear el diagrama Entidad / Relación y transformarlo a tablas del modelo Relacional. Entidades: 
+a) Municipalidad. 
+b) Vivienda 
+c) Persona 
+Relaciones: 
+a) Habita 
+b) Empadronado en 
+c) Propietario de 
+Supuestos dados: 
+a) Cada persona sólo puede habitar en una vivienda. 
+b) Cada persona puede ser propietaria de más de una vivienda. 
+c) Una persona está empadronada en una sola municipalidad. 
+d) En una vivienda pueden habitar más de una persona. 
+e) Una vivienda puede ser propiedad de más de una persona. 
+f) Una vivienda pertenece a una sola municipalidad. 
+g) Una municipalidad puede tener muchas viviendas.
+
+
+3. Crear el diagrama Entidad / Relación y transformarlo a tablas del modelo Relacional.   
+Supuestos dados: 
+a) Un paciente puede estar internado en una sola sala. 
+b) Un paciente puede ser atendido por varios doctores. 
+c) En una sala pude haber muchos pacientes internados. 
+d) Un empleado puede tener asignada una sola función. 
+e) Un empleado puede trabajar en más de un turno 
+f) Una función puede ser cumplida por más de un empleado. 
+g) Un doctor puede atender a más de un paciente. 
+h) Un doctor puede ejercer varias especialidades. 
+i) Un doctor puede trabajar en más de un turno 
+j) Una especialidad puede ser ejercida por más de un doctor. 
+k) En un turno pueden trabajar más de un empleado. 
+l) En un turno pueden trabajar más de un doctor. 
+4. Crear el diagrama Entidad / Relación y transformarlo a tablas del modelo Relacional. El departamento de formación de una empresa desea construir una base de datos para planificar y gestionar la formación de sus empleados. 
+La empresa organiza cursos internos de formación de los que desea conocer el código de curso, el nombre, una breve descripción, el número de horas de duración y el costo del curso. 
+Un curso puede tener como prerrequisito haber realizado otro(s) previamente. Un curso que es un prerrequisito puede serlo de forma obligatoria o sólo recomendable.
+Un mismo curso puede ser impartido en diferentes lugares, fechas y con diferentes horarios (día entero, mañana, tarde). En una misma fecha sólo puede impartirse una edición de un curso. 
+Los cursos se imparten por personal de la empresa. 
+De los empleados se desea almacenar su código de empleado, nombre y apellidos, dirección, teléfono, cuil/cuit, fecha de nacimiento, nacionalidad, sexo y salario, así como si está capacitado para impartir cursos. 
+Un mismo empleado puede ser docente en una edición de un curso y alumno en otra edición, pero nunca puede ser ambas cosas a la vez. 
+5. Crear el diagrama Entidad / Relación y transformarlo a tablas del modelo Relacional. La municipalidad de Bariloche desea guardar información sobre las estancias que existen en su jurisdicción y brindan alojamiento a pasajeros. Para ello decide crear una base de datos que contemple las siguientes consideraciones: 
+Un alojamiento rural (estancia) se identifica por un nombre(‘La Tranquila’, ‘La Rosita’, etc) que no se repite, tiene una dirección, un teléfono y una persona de contacto que pertenece al personal del establecimiento. 
+En cada establecimiento trabajan una serie de personas que se identifican por un código personal. Se requiere conocer el nombre completo, la dirección,y el CUIL . Aunque en un establecimiento trabajen varias personas, una persona puede trabajar en un solo establecimiento. 
+Los alojamientos se alquilan por habitaciones y se desea conocer cuántas habitaciones componen la estancia, de qué tipo (single, doble, triple,etc) es cada una de ellas, si posee cuarto de baño y el precio diario. 
+En algunas de estas estancias se realizan actividades organizadas para los huéspedes (senderismo, bicicleta de montaña, etc). Estas actividades se identifican por un código. Es de interés saber el nombre de la actividad, la descripción y el nivel de dificultad de dicha actividad ( de 1 a 10). 
+Estas actividades se realizan un día a la semana, por ejemplo: en la estancia ‘La Tranquila’ se practica alpinismo los sábados y se desea guardar esta información. Puede haber algún día que no se practique ninguna actividad. 
+Se pide: 
+Diseñar el esquema relacional. Indicar las claves primarias y las claves externas. Marque con un * los campos que aceptan valores nulos. 
+6. Crear el diagrama Entidad / Relación y transformarlo a tablas del modelo Relacional. 
+El Ministerio de Educación y Cultura desea mantener información acerca de todos los cuadros que se encuentran en museos de la Argentina
+De cada museo se desea saber el nombre(que se supone único), la ciudad en la que se encuentra, la dirección y la superficie que tiene en metros cuadrados. 
+Cada museo tiene una serie de cuadros de los que se quiere guardar su código, nombre, medidas, fecha en que fue pintado y técnica utilizada para pintarlo. 
+Cada cuadro es pintado por un determinado pintor( nombre, país,ciudad,fecha de nacimiento, fecha de fallecimiento). Un pintor puede tener a otro como maestro; a su vez, un maestro puede serlo de varios (o de ninguno). 
+Los pintores pueden pertenecer a una escuela de la que se desea saber su nombre y en que país y fecha apareció. 
+Los pintores pueden tener uno o varios mecenas que los protegen (nombre, país, y ciudad de nacimiento, fecha de fallecimiento, y fecha en que se inicia y termina el mecenazgo). Un mismo mecenas puede serlo de varios pintores. 
+Se pide: Diseñar el esquema relacional. Indicar las claves primarias y las claves externas. Marque con un * los campos que acepten valores nulos. 
+7. Crear el diagrama Entidad / Relación y transformarlo a tablas del modelo Relacional. Una empresa dedicada al alquiler de automóviles desea disponer de una base de datos con la información de las reservas de sus automóviles. 
+Un determinado cliente puede tener en un momento dado hechas varias reservas. De cada cliente se desea almacenar su Cuil, nombre, dirección y teléfono. Dos clientes se diferencian entre sí por un código de cliente. 
+Cada cliente puede ser recomendado por otro cliente. 
+Una reserva la realiza un único cliente pero puede involucrar a varios coches. Es importante registrar la fecha de inicio y fin de la reserva, el precio de alquiler de cada uno de los coches, los litros de combustible en el tanque en el momento de realizar la reserva, el precio total de la reserva y un indicador de si el coche o los coches han sido entregados. Todo coche tiene siempre asignado un garaje que no puede cambiar. De cada coche se requiere el número de patente, el modelo, el color y la marca. Cada reserva se realiza en una determinada agencia. 
+8. Crear el diagrama Entidad / Relación y transformarlo a tablas del modelo Relacional. Una empresa se dedica a la construcción y desea disponer de una base de datos para gestionar la contratación de maquinaria (camiones, excavadoras,…) en sus proyectos. 
+De cada Proyecto se conoce: nombre o descripción del proyecto, localidad, razón social del cliente y de cada maquinaria utilizada: proyecto en que se utilizó, para que trabajo, en que fecha, tiempo de uso y conductor. 
+De cada maquinaria se conoce el modelo, la descripción o nombre y la tarifa por hora. De cada conductor se conoce el nombre, la localidad a la que pertenece y el salario por hora. Un Cliente puede haber encargado varios proyectos. 
+Una maquinaria puede ser usada en muchos proyectos, y dependiendo de la maquinaria ésta puede utilizarse para varios trabajos. 
+Un conductor puede conducir maquinarias de distintos modelos en distintos proyectos para distintos trabajos. 
+El salario del conductor no varía respecto de la maquinaria que conduzca o del trabajo que realice.
